@@ -1,0 +1,72 @@
+Um projeto Open Source é de Código Abrto, livre para ser utilizadp, modificado e distribuido.
+Ex.:
+
+LINUX >> Sob Licença da GNU -- General Public License (GPL)
+ROADMAPS DIO >> Sob licença MIT License (MIT)
+
+
+__________________________________________________
+__________________________________________________
+
+Formas de Contibuir:
+
+>> Relatar Problema ou BUG
+>> Sugerir melhorias ou Adição de novos recursos
+>> Escrever ou atualizar a documentação
+>> Contribuir com o Código
+>> Divulgar e/ou doar
+
+__________________________________________________
+__________________________________________________
+
+Desenvolvendo uma contribuição
+
+Primeiro, em https://github.com/digitalinnovationone/dio-lab-open-source teremos que clicar em FORK, acima à direita da tela
+
+Logo após isso, é criada uma cópia do repositório original na minha conta
+
+BOTÃO SYNC FORK, sincroniza o nosso repo com o original
+
+na minha página inicial do repositório copiado, clicar em <>CODE, e depois em HTTPS para copiar o caminho da clonagem   que será feita
+
+abrir a pasta de destino e clicar com o bot dir e depois em git bash here
+
+digitar comando GIT CLONE e colar o link 
+https://github.com/JoaoPSRibeiro/dio-lab-open-source.git
+______________________________________________
+
+Agora, vamos conectar nosso repo local ao repo original, para estarmos atualizados com as alterações feitas lá
+
+para isso, precisamos copiar em <>CODE o https do repo original
+
+no terminal do bash, entrar na pasta que foi clonada (cd dio-lab-open-source) colocar >> git remote add upstream https://github.com/digitalinnovationone/dio-lab-open-source
+
+
+Para atualizar, os dados de forma local, popdemos fazer de 2 formas:
+1º git pull upstream main >> busca no original as alterações e traz para a gente
+2º remotamente, atualizamos a cópia, usando o Sync Fork, depois em Update Branch. Feito isso, no git bash escrever git pull origin main >> Este comamando busca na nossa cópia a atualização
+______________________________________________
+
+Agora, para criar uma nova Branch no github
+
+no terminal digitar:
+git checkout -b feat/JoaoPSRibeiro
+
+para criar um arquivo no terminal
+>> touch community/JoaoPSRibeiro.md
+
+*** Site para criação de MarkDown
+readme.so/pt/editor
+
+______________________________________________
+
+ESTRUTURAS CONDICIONAIS
+
+if ternário:
+    >> Permite escrever uma condição em uma única linha. Ele é composto por três partes.
+        >> A primeira parte é o retorno caso a expressão retorne verdadeiro
+        >> A segunda parte é a expressão lógica
+        >> A terceira parte é o retorno caso a expressão caso não seja atendido
+
+                Ex.: status = 'Sucesso' if saldo >= saque else 'Falha'
+                    >> Se saldo for maior que saque, imprima sucesso. Senão, imprima Falha

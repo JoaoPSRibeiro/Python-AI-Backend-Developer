@@ -1,0 +1,79 @@
+Os tiops servem para definir caracteristicas e comportamentos e um valor (objeto)
+
+
+tipos:
+texto -- Strings
+numérico -- int, float, complex
+sequência -- list, tuple, range
+Mapa -- dict
+coleção -- set, frozenset
+Booleano -- Bool
+Binário -- bytes, bytearray, memoryview
+
+
+tipos numéricos
+Booleanos e Strings
+___________________________________________
+___________________________________________
+
+USANDO O MODO INTERATIVO
+
+podemos, no terminal, executar o comando python ou ainda, executar 
+python -i app.py (sem as aspas, este app é o nome do aquivo que estamos criando )
+
+para sair, escrever exit()
+___________________________________________
+___________________________________________
+FUNÇÃO HELP E DIR
+
+DIR - Sem argumentos, retorna a lista de nome no escopo local atual. com um argumento, retorna uma lista de atributos válidos para o projeto.
+
+dir() - retorna os nomes no escopo local
+dir(100) - retorna os nomes que usan INT       como  métodos
+
+***** QUASE NUNCA USADO *****
+_____
+HELP mostrará a documentação da função desejada
+Ex.: help(print)
+    vai mostrar a documentação da função print
+
+___________________________________________
+___________________________________________
+
+VARIÁVEIS E CONSTANTES
+
+Usar sistema Snake Case, que consiste em colocar o _ entre as palavras que darão nome à variável
+Escolher nomes Sugestivos, nada de usar abreviaç~eos esdrúxulas como A, di, Saq etc.
+    >> Usar limite_diario_saque ao invés de li_sa_di por exemplo
+CONSTANTES são escritas com letras maísculas para diferenciar. sabemos que uma constante é imutável, mas o Python deixa mudar, com isso, o uso da caixa alta é uma convenção da comunidade
+
+podemos definir ou sobrescrever mais de uma variável em uma mesmoa linha:
+    >> nome, idade = "João", 39
+
+
+___________________________________________
+___________________________________________
+CONVERSÃO DE tipos
+
+Podemos receber valores, por exemplo, como sendo String, assim, precisamos transformar essa string em float ou int, para podermos calcular esses valores por exemplo.
+
+Ex.:
+    >> preco = '10' # preço no formato String
+    >> preco = float(preco) # preço convertido para float
+
+    preco = 10
+    preco = str(preco) # de int para String
+
+    preco = "python"
+    preco = float(preco) # Vai retornar um erro, o vai perceber que a variável não era numérica e vai mostrar que não foi possível converter
+
+___________________________________________
+___________________________________________
+FUNÇÕES DE ENTRADA E SAÍDA
+
+input => recebe os dados que o usuário quer inserir, converte para string e retorna este valor
+print => exibe os dados que forem solicitados.  Ela recebe um argumento obrigatório do tipo varargs de objetos e 4 argumentos opcionais (sep, end, file e flush). Todos os objetos convertidos em strings, são separados por sep e terminados em end.
+
+Exemplo:
+    >> nome = input('Digite seu nome: ')
+    >> print(nome)
